@@ -1,0 +1,26 @@
+
+.contenedor{
+    display: grid;
+    display: grid;
+    grid-template-columns: 100px auto auto 100px;
+    grid-gap: 10px;
+    background-color: #eecd11;
+    padding: 10px;
+}
+.contenedor > div {
+    background-color: rgba(10, 114, 114, 0.911);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+/**/
+.imagen{
+    display: grid;
+    place-items: center;    
+    /*transform: rotate(20deg);*/
+}
+
+.tarjetaPrincipal {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

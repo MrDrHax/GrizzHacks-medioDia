@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <title>lol no se que estoy haciendo</title>
+
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 50px auto auto 50px;
+          grid-gap: 10px;
+          background-image: url("static/W2.jpeg");
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            height: 100px; 
+            background-position: center; 
+            /*background-size: cover;*/
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        
+        .item2 {
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+        .item5 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+        .item6 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <!-- COMENTARIO -->
+    <div class = grid-container>
+        <div class="item2">{{titulo}}</div>
+        <div class="item5"><a href=run1 >{{body1}}</a></div>
+        <div class="item6"><a href=run2 >{{body2}}</a></div>
+        <div class="item5"><a href=run3 >{{body3}}</a></div>
+        <div class="item6"><a href=run4 >{{body4}}</a></div>
+    </div>
+    
+    
+</body>
+</html>

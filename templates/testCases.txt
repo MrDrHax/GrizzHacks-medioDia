@@ -1,0 +1,154 @@
+{
+    "q0": {
+        "question":"You are hosting a competition to select a construction company to build a hospital of total cost $100M. The A company offers you 15% of the total cost of the hospital if you select them. What would you do?",
+                "answer1":{
+            "answer":"You take the 15% deal and select the A company.",
+            "type":"select",
+            "mods":[15000000, -1, 0, 0, 0, 0]
+        },
+        "answer2":{
+            "answer":"You report the A company to the authorities.",
+            "type":"select",
+            "mods":[0, 1, 1, 0, 0, 1]
+        },
+        "answer3":{
+            "answer":"You counteroffer the A company with X% (> 15) of the total cost.",
+            "type":"input",
+            "mods":[input, -2, 0, 0, 0, -1]
+        },
+        "answer4":{
+            "answer":"You ignore the offer and continue the competition as if nothing happened.",
+            "type":"select",
+            "mods":[1, 0, 1, 0, 0, 0]
+        }
+    },
+    "q1": {
+        "question":"A consultor is nedeed for a social proyect. There is a list of +100 applicants. Your teammate's son in on the list and has economic problems. What would you do?",
+        
+        "answer1":{
+            "answer":"You chose the most prepared applicant.",
+            "type":"select",
+            "mods":[0, 1, 0, 2, 0, 0]
+        },
+        "answer2":{
+            "answer":"You chose your partner's son.",
+            "type":"select",
+            "mods":[0, -1, 0, -1, 0, 1]
+        },
+        "answer3":{
+            "answer":"You ask your partner's son for $X (knowing his economic issues) in exchange for choosing him.",
+            "type":"input",
+            "mods":[input, -2, 0, -1, 0, 0]
+        }
+    },
+    "q2": {
+        "question":"An airport will be built near to a growing metropolitan area. Your father in law is looking to invest in the real state market. What would you do?",
+        
+        "answer1":{
+            "answer":"You tell him about the location of the new airport.",
+            "type":"select",
+            "mods":[0, -1, 2, 0, 0, 0]
+        },
+        "answer2":{
+            "answer":"You don't mention it.",
+            "type":"select",
+            "mods":[0, 1, -2, 0, 0, 1]
+        },
+        "answer3":{
+            "answer":"You ask your father in law for $X in exchange for key information.",
+            "type":"input",
+            "mods":[input, -2, 1, 0, 0, 0]
+        }
+    },
+    "q3": {
+        "question":"The oil workers union threatens to go on strike if there is no salary increase. The governor asks you to negotiate with the union without giving any raise in the salary. What would you do?",
+        
+        "answer1":{
+            "answer":"You brive with X$ the union's leader in order to cancel the strike.",
+            "type":"input",
+            "mods":[input, -1, 1, -2, 0, 2]
+        },
+        "answer2":{
+            "answer":"You try to persuade the governor to raise the salary.",
+            "type":"select",
+            "mods":[0, 0, -1, 2, 0, -2]
+        },
+        "answer3":{
+            "answer":"You do not negotiate and let the strike to move on.",
+            "type":"select",
+            "mods":[0, 0, -2, 1, 0, -2]
+        }
+    },
+    "q4": {
+        "question":"During the audit of a company you realized that someone has been laundring money. However, your boss is involved. Each person involved is getting $2000 as their cut. What would you do?",
+        
+        "answer1":{
+            "answer":"You report to the authorities all the people involved.",
+            "type":"select",
+            "mods":[0, 2, 1, 0, 0, 1]
+        },
+        "answer2":{
+            "answer":"You accept a brive of X$ from your boss.",
+            "type":"input",
+            "mods":[input, -1, 0, 0, 0, 0]
+        },
+        "answer3":{
+            "answer":"You ask your boss to include you in the 'laundring' bussiness.",
+            "type":"select",
+            "mods":[2000, -2, 0, 0, 0, 0]
+        },
+        "answer4":{
+            "answer":"You fix the audit (without your boss kwoning) as if nothing happened.",
+            "type":"select",
+            "mods":[0, -1, 1, 0, 0, -2]
+        }
+    },
+    "q5": {
+        "question":"You are a journalist who discovers the construction plans for a new factory in an endemic area. What would you do?",
+        
+        "answer1":{
+            "answer":"You write an article about the ecological drawbacks of the new factory.",
+            "type":"select",
+            "mods":[0, 0, 0, 1, 1, 0]
+        },
+        "answer2":{
+            "answer":"You write an article about the industrial advantages of the new factory.",
+            "type":"select",
+            "mods":[0, 0, 0, -1, -1, 0]
+        },
+        "answer3":{
+            "answer":"You ask the new factory's owners for X$ in exchange of not writing an article.",
+            "type":"input",
+            "mods":[input, 0, 1, 0, -1, 0]
+        },
+        "answer4":{
+            "answer":"You approach an environmental organization to organize a protest against the factory.",
+            "type":"select",
+            "mods":[0, 0, -1, 2, 2, 0]
+        }
+    },
+    "q6": {
+        "question":"You discover an employee of your high tech company exploiting a security breach on your main software. What would you do?",
+        
+        "answer1":{
+            "answer":"Fire the employee inmediatly and repear the breach",
+            "type":"select",
+            "mods":[0, 1, 0, 0, 0, 0]
+        },
+        "answer2":{
+            "answer":"Call the police and let them in charge.",
+            "type":"select",
+            "mods":[0, 3, 1, 0, 0, 0]
+        },
+        "answer3":{
+            "answer":"Don't report the breach and exploit it to steal finantial data from your competence.",
+            "type":"select",
+            "mods":[0, -1, 0, 0, 0, -2]
+        },
+        "answer4":{
+            "answer":"Sell the breach information for $1000 to a hacker group",
+            "type":"select",
+            "mods":[1000, -3, 0, 0, 0, 0]
+        }
+    }
+ }

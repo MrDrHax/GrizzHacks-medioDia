@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {% block link %}{% endblock link %}
+</head>
+<body>
+    <nav class="topNavbar">
+    {% for menuItem in session['menuList'] %}
+        {% if menuItem.label == 'Account' %}
+            <li><a href="{{ menuItem.url }}" class="{{ menuItem.class }}">{% if 'user' in session %}{{ session['userId'] }}{% else %}{{ menuItem.label }}{% endif %}</a></li>
+        {% else %}
+            <li><a href="{{ menuItem.url }}" class="{{ menuItem.class }}">{{ menuItem.label }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </nav>
+    <p>{{ session }}</p>
+{% block content %}
+<!-- Here goes the page content -->
+{% endblock content %}
+</body>
+</html>
